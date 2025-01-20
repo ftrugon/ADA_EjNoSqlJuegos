@@ -32,19 +32,6 @@ object DataBase {
 
     }
 
-    /*
-    fun <T:Any>getCollection(collectionName:String,classType: Class<T>?): MongoCollection<T>? {
-
-        print(classType)
-
-        if (classType != null) {
-            return db.getCollection(collectionName,classType)
-        }else{
-            return db.getCollection(collectionName)
-        }
-    }*/
-
-
     fun juegosGetCollection(): MongoCollection<Juego> {
         return db.getCollection(collJuegosName,Juego::class.java)
     }

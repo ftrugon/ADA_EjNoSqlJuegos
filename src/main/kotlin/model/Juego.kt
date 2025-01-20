@@ -9,4 +9,7 @@ data class Juego(
     val fecha_lanzamiento: Date
 ){
 
+    override fun toString(): String {
+        return "titulo: $titulo, genero: $genero, precio: $precio, fecha_lanzamiento: $fecha_lanzamiento"
+    }
 }
